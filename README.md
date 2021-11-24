@@ -16,7 +16,7 @@
 
 操作系统：windows10，11
 
-python版本：python3.9.1 （经网友反馈测试，这个版本一定可行，其余版本可能会在安装mediapipe时出错）
+python版本：Python 3.7以上 （其余版本可能会在安装mediapipe时出错）
 
 #### 2.2 运行方法
 
