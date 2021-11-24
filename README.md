@@ -6,7 +6,7 @@
 
 | 抖音                                                         | 快手                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5859.JPG?x-oss-process=style/wp" style="width:200px" /> | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5858.JPG?x-oss-process=style/wp" style="width:200px" /> |
+| <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5859.JPG?x-oss-process=style/wp" style="width:200px" /><br/><br />[网页版抖音](https://www.douyin.com/user/MS4wLjABAAAAPIrmWhFY-OHt5X8GZcHGqwDo3J29gYHcgG-QebKIDd4Wu_f4dwM2hNoEYyQBcim2?enter_from=search_result&enter_method=search_result&extra_params=%7B%22search_params%22%3A%7B%22search_type%22%3A%22user%22%2C%22search_id%22%3A%22202111241756340101512071374A007D0F%22%2C%22search_keyword%22%3A%22enpe%22%2C%22search_result_id%22%3A%221205502393189652%22%7D%7D) | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5858.JPG?x-oss-process=style/wp" style="width:200px" /><br/>[网页版快手](https://www.kuaishou.com/profile/3x54fkprp4xtu4a) |
 
 
 
