@@ -6,15 +6,15 @@
 
 | 抖音                                                         | 快手                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5859.JPG?x-oss-process=style/wp" style="zoom:25%;" /> | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5858.JPG?x-oss-process=style/wp" style="zoom:25%;" /> |
+| <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5859.JPG?x-oss-process=style/wp" style="width:200px" /> | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5858.JPG?x-oss-process=style/wp" style="width:200px" /> |
 
 
 
 ### 二、运行环境及运行方法
 
-### 运行环境
+### 测试运行环境
 
-操作系统：windows10
+操作系统：windows10，11
 
 python版本：python3.9.1 （经网友反馈测试，这个版本一定可行，其余版本会在安装mediapipe时出错）
 
