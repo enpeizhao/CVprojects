@@ -6,7 +6,9 @@
 
 | 抖音                                                         | 快手                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5858.JPG?x-oss-process=style/wp" style="zoom:25%;" /> | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5859.JPG?x-oss-process=style/wp" style="zoom:25%;" /> |
+| <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5859.JPG?x-oss-process=style/wp" style="zoom:25%;" /> | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5858.JPG?x-oss-process=style/wp" style="zoom:25%;" /> |
+
+
 
 
 
@@ -22,5 +24,11 @@
 
 ## 交流微信：
 
-<img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5862.JPG?x-oss-process=style/wp" style="zoom:25%;" />
+<img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5862.JPG?x-oss-process=style/wp" style="width:200px;" />
+
+
+
+## 注意：
+
+请仅做个人研究使用，禁止商用。
 
