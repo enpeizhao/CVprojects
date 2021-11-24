@@ -21,7 +21,21 @@
 | 7.虚拟拖放 Python + opencv | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img20211120135236.png?x-oss-process=style/wp" style="zoom:25%;" /> | [codes/7.virtual_drag_drop.py](https://github.com/enpeizhao/CVprojects/blob/main/codes/7.virtual_drag_drop.py) |
 
 
+## 运行环境及运行方法
+### 运行环境
+操作系统：windows10
 
+python版本：python3.9.1 （经测试，这个版本一定可行，其余版本会在安装mediapipe时出错）
+### 运行方法
+`$ git clone https://github.com/enpeizhao/CVprojects.git`
+
+`$ cd CVprojects`
+
+`$ pip3 install -r requirements.txt`
+
+`$ cd codes`
+
+`$ python 6.hand_control_volume.py`
 ## 交流微信：
 
 <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5862.JPG?x-oss-process=style/wp" style="width:200px;" />

@@ -9,7 +9,6 @@ Date: 2021-11-16
 4、将距离等比例转为音量大小，控制电脑音量
 """
 
-
 # 导入OpenCV
 import cv2
 # 导入mediapipe
@@ -24,6 +23,7 @@ import time
 import math
 import numpy as np
 
+
 class HandControlVolume:
     def __init__(self):
         # 初始化medialpipe
@@ -36,6 +36,7 @@ class HandControlVolume:
         interface = devices.Activate(
             IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
         self.volume = cast(interface, POINTER(IAudioEndpointVolume))
+        self.volume.SetMute(0, None)
         self.volume_range = self.volume.GetVolumeRange()
 
     # 主函数
@@ -105,40 +106,42 @@ class HandControlVolume:
                             index_finger_tip_x = math.ceil(index_finger_tip[1] * resize_w)
                             index_finger_tip_y = math.ceil(index_finger_tip[2] * resize_h)
                             # 中间点
-                            finger_middle_point = (thumb_finger_tip_x+index_finger_tip_x)//2, (thumb_finger_tip_y+index_finger_tip_y)//2
+                            finger_middle_point = (thumb_finger_tip_x + index_finger_tip_x) // 2, (
+                                        thumb_finger_tip_y + index_finger_tip_y) // 2
                             # print(thumb_finger_tip_x)
-                            thumb_finger_point = (thumb_finger_tip_x,thumb_finger_tip_y)
-                            index_finger_point = (index_finger_tip_x,index_finger_tip_y)
+                            thumb_finger_point = (thumb_finger_tip_x, thumb_finger_tip_y)
+                            index_finger_point = (index_finger_tip_x, index_finger_tip_y)
                             # 画指尖2点
-                            image = cv2.circle(image,thumb_finger_point,10,(255,0,255),-1)
-                            image = cv2.circle(image,index_finger_point,10,(255,0,255),-1)
-                            image = cv2.circle(image,finger_middle_point,10,(255,0,255),-1)
+                            image = cv2.circle(image, thumb_finger_point, 10, (255, 0, 255), -1)
+                            image = cv2.circle(image, index_finger_point, 10, (255, 0, 255), -1)
+                            image = cv2.circle(image, finger_middle_point, 10, (255, 0, 255), -1)
                             # 画2点连线
-                            image = cv2.line(image,thumb_finger_point,index_finger_point,(255,0,255),5)
+                            image = cv2.line(image, thumb_finger_point, index_finger_point, (255, 0, 255), 5)
                             # 勾股定理计算长度
-                            line_len = math.hypot((index_finger_tip_x-thumb_finger_tip_x),(index_finger_tip_y-thumb_finger_tip_y))
+                            line_len = math.hypot((index_finger_tip_x - thumb_finger_tip_x),
+                                                  (index_finger_tip_y - thumb_finger_tip_y))
 
                             # 获取电脑最大最小音量
                             min_volume = self.volume_range[0]
                             max_volume = self.volume_range[1]
                             # 将指尖长度映射到音量上
-                            vol = np.interp(line_len,[50,300],[min_volume,max_volume])
+                            vol = np.interp(line_len, [50, 300], [min_volume, max_volume])
                             # 将指尖长度映射到矩形显示上
-                            rect_height = np.interp(line_len,[50,300],[0,200])
-                            rect_percent_text = np.interp(line_len,[50,300],[0,100])
+                            rect_height = np.interp(line_len, [50, 300], [0, 200])
+                            rect_percent_text = np.interp(line_len, [50, 300], [0, 100])
 
                             # 设置电脑音量
                             self.volume.SetMasterVolumeLevel(vol, None)
 
                 # 显示矩形
-                cv2.putText(image, str(math.ceil(rect_percent_text))+"%", (10, 350),
+                cv2.putText(image, str(math.ceil(rect_percent_text)) + "%", (10, 350),
                             cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 0), 3)
-                image = cv2.rectangle(image,(30,100),(70,300),(255, 0, 0),3)
-                image = cv2.rectangle(image,(30,math.ceil(300-rect_height)),(70,300),(255, 0, 0),-1)
+                image = cv2.rectangle(image, (30, 100), (70, 300), (255, 0, 0), 3)
+                image = cv2.rectangle(image, (30, math.ceil(300 - rect_height)), (70, 300), (255, 0, 0), -1)
 
                 # 显示刷新率FPS
                 cTime = time.time()
-                fps_text = 1/(cTime-fpsTime)
+                fps_text = 1 / (cTime - fpsTime)
                 fpsTime = cTime
                 cv2.putText(image, "FPS: " + str(int(fps_text)), (10, 70),
                             cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 0), 3)
@@ -148,9 +151,7 @@ class HandControlVolume:
                     break
             cap.release()
 
+
 # 开始程序
 control = HandControlVolume()
 control.recognize()
-
-
-
