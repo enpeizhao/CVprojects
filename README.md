@@ -28,7 +28,7 @@ python版本：Python 3.7以上 （其余版本可能会在安装mediapipe时出
 
 `$ cd codes`
 
-`$ python 6.hand_control_volume.py`
+`$ python 6.hand_control_volume/6.hand_control_volume.py`
 
 
 
