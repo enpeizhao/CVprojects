@@ -36,9 +36,10 @@ python版本：Python 3.7以上 （其余版本可能会在安装mediapipe时出
 
 | 名称                       | 截图                                                         | 代码                                                         |
 | -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 5.手势暂停、播放电视       | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5885.jpg?x-oss-process=style/wp" style="width:200px" /> | [codes/5.hand_pause_atv/handRemote.py](https://github.com/enpeizhao/CVprojects/blob/main/codes/5.hand_pause_atv/handRemote.py ) |
-| 6.Python手势控制电脑音量   | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img20211120135209.png?x-oss-process=style/wp" style="width:200px;" /> | [codes/6.hand_control_volume.py](https://github.com/enpeizhao/CVprojects/blob/main/codes/6.hand_control_volume) |
+| 8. 火影结印识别            | ![](https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img20211201102837.png?x-oss-process=style/wp) | 整理中，预计12月2日前发出                                    |
 | 7.虚拟拖放 Python + opencv | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img20211120135236.png?x-oss-process=style/wp" style="width:200px;" /> | [codes/7.virtual_drag_drop.py](https://github.com/enpeizhao/CVprojects/blob/main/codes/7.virtual_drag_drop.py) |
+| 6.Python手势控制电脑音量   | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img20211120135209.png?x-oss-process=style/wp" style="width:200px;" /> | [codes/6.hand_control_volume.py](https://github.com/enpeizhao/CVprojects/blob/main/codes/6.hand_control_volume) |
+| 5.手势暂停、播放电视       | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5885.jpg?x-oss-process=style/wp" style="width:200px" /> | [codes/5.hand_pause_atv/handRemote.py](https://github.com/enpeizhao/CVprojects/blob/main/codes/5.hand_pause_atv/handRemote.py ) |
 
 
 ### 四、交流微信：
