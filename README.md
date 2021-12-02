@@ -1,5 +1,7 @@
 # 计算机视觉小项目
 
+> 请仅做个人研究使用，禁止商用
+
 
 
 ### 一、观看项目实际运行视频：
@@ -47,8 +49,4 @@ python版本：Python 3.7以上 （其余版本可能会在安装mediapipe时出
 <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5862.JPG?x-oss-process=style/wp" style="width:200px;" />
 
 
-
-### 五、注意：
-
-请仅做个人研究使用，禁止商用。
 
