@@ -107,7 +107,7 @@ class HandControlVolume:
                             index_finger_tip_y = math.ceil(index_finger_tip[2] * resize_h)
                             # 中间点
                             finger_middle_point = (thumb_finger_tip_x + index_finger_tip_x) // 2, (
-                                        thumb_finger_tip_y + index_finger_tip_y) // 2
+                                    thumb_finger_tip_y + index_finger_tip_y) // 2
                             # print(thumb_finger_tip_x)
                             thumb_finger_point = (thumb_finger_tip_x, thumb_finger_tip_y)
                             index_finger_point = (index_finger_tip_x, index_finger_tip_y)
@@ -147,7 +147,7 @@ class HandControlVolume:
                             cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 0), 3)
                 # 显示画面
                 cv2.imshow('MediaPipe Hands', image)
-                if cv2.waitKey(5) & 0xFF == 27:
+                if cv2.waitKey(5) & 0xFF == 27 or cv2.getWindowProperty('MediaPipe Hands', cv2.WND_PROP_VISIBLE) < 1:
                     break
             cap.release()
 
