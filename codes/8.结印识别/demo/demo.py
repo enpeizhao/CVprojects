@@ -56,12 +56,12 @@ class HandPose:
         self.joint_type = {'right': np.arange(0,self.joint_num), 'left': np.arange(self.joint_num,self.joint_num*2)}
 
         # snapshot load
-        model_path = './snapshot_20.pth.tar'
+        model_path = './InterHand2.6M_all/snapshot_20.pth.tar'
         assert osp.exists(model_path), 'Cannot find self.hand_pose_model at ' + model_path
         print('Load checkpoint from {}'.format(model_path))
         self.hand_pose_model = get_model('test', self.joint_num)
-        self.hand_pose_model = DataParallel(self.hand_pose_model).cuda()
-        ckpt = torch.load(model_path)
+        #self.hand_pose_model = DataParallel(self.hand_pose_model).cuda()
+        ckpt = torch.load(model_path, map_location=torch.device('cpu'))
         self.hand_pose_model.load_state_dict(ckpt['network'], strict=False)
         self.hand_pose_model.eval()
 
@@ -76,7 +76,8 @@ class HandPose:
         bbox = process_bbox(bbox, (original_img_height, original_img_width, original_img_height))
         img, trans, inv_trans = generate_patch_image(original_img, bbox, False, 1.0, 0.0, cfg.input_img_shape)
         img = self.transform(img.astype(np.float32))/255
-        img = img.cuda()[None,:,:,:]
+        #img = img.cuda()[None,:,:,:]
+        img = img[None,:,:,:]
         
         # forward
         inputs = {'img': img}
@@ -112,7 +113,7 @@ class HandPose:
 class HandRecognize:
     def __init__(self):
         self.modelGCN = GCN(3, 16, 6)
-        self.modelGCN.load_state_dict(torch.load('./saveModel/handsModel.pth'))
+        self.modelGCN.load_state_dict(torch.load('./saveModel/handsModel.pth', map_location=torch.device('cpu')))
         self.modelGCN.eval()
         self.handPose = HandPose()
         self.mp_hands = mp.solutions.hands
@@ -186,9 +187,9 @@ class HandRecognize:
 
         # 测试模型
             
-        device = torch.device("cuda:0")
-        bg = bg.to(device)
-        self.modelGCN = self.modelGCN.to(device)
+        #device = torch.device("cuda:0")
+        #bg = bg.to(device)
+        #self.modelGCN = self.modelGCN.to(device)
         pred = self.modelGCN(bg, bg.ndata['feat'].float())
         pred_type =pred.argmax(1).item()
 
@@ -340,6 +341,14 @@ class HandRecognize:
 
                     if len(paw_x_list) > 0:
 
+                        # 比例缩放到像素
+                        ratio_x_to_pixel = lambda x: math.ceil(x * resize_w)
+                        ratio_y_to_pixel = lambda y: math.ceil(y * resize_h)
+                        
+                        # 设计手掌左上角、右下角坐标
+                        paw_left_top_x,paw_right_bottom_x = map(ratio_x_to_pixel,[min(paw_x_list),max(paw_x_list)])
+                        paw_left_top_y,paw_right_bottom_y = map(ratio_y_to_pixel,[min(paw_y_list),max(paw_y_list)])
+
                         # 计算模型
                         # prepare bbox
                         x_t_l = paw_left_top_x-100
@@ -354,13 +363,6 @@ class HandRecognize:
                         pred_type = self.predictAction(joint_coord)
                         print("action: " + str(pred_type))
                             
-                        # 比例缩放到像素
-                        ratio_x_to_pixel = lambda x: math.ceil(x * resize_w)
-                        ratio_y_to_pixel = lambda y: math.ceil(y * resize_h)
-                        
-                        # 设计手掌左上角、右下角坐标
-                        paw_left_top_x,paw_right_bottom_x = map(ratio_x_to_pixel,[min(paw_x_list),max(paw_x_list)])
-                        paw_left_top_y,paw_right_bottom_y = map(ratio_y_to_pixel,[min(paw_y_list),max(paw_y_list)])
 
                         # 给手掌画框框
                         cv2.rectangle(self.image,(paw_left_top_x-50,paw_left_top_y-50),(paw_right_bottom_x+50,paw_right_bottom_y+50),(0, 255,0),2)

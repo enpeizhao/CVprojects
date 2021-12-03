@@ -1,4 +1,4 @@
-mediapipe==0.8.9
+mediapipe
 comtypes
 pycaw
 numpy
