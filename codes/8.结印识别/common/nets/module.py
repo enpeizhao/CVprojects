@@ -41,7 +41,6 @@ class PoseNet(nn.Module):
     def soft_argmax_1d(self, heatmap1d):
         heatmap1d = F.softmax(heatmap1d, 1)
         accu = heatmap1d * torch.arange(cfg.output_root_hm_shape).float()[None,:]
-        #accu = heatmap1d * torch.arange(cfg.output_root_hm_shape).float().cuda()[None,:]
         coord = accu.sum(dim=1)
         return coord
 

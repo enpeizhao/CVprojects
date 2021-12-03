@@ -56,11 +56,10 @@ class HandPose:
         self.joint_type = {'right': np.arange(0,self.joint_num), 'left': np.arange(self.joint_num,self.joint_num*2)}
 
         # snapshot load
-        model_path = './InterHand2.6M_all/snapshot_20.pth.tar'
+        model_path = './snapshot_20.pth.tar'
         assert osp.exists(model_path), 'Cannot find self.hand_pose_model at ' + model_path
         print('Load checkpoint from {}'.format(model_path))
         self.hand_pose_model = get_model('test', self.joint_num)
-        #self.hand_pose_model = DataParallel(self.hand_pose_model).cuda()
         ckpt = torch.load(model_path, map_location=torch.device('cpu'))
         self.hand_pose_model.load_state_dict(ckpt['network'], strict=False)
         self.hand_pose_model.eval()
@@ -76,7 +75,6 @@ class HandPose:
         bbox = process_bbox(bbox, (original_img_height, original_img_width, original_img_height))
         img, trans, inv_trans = generate_patch_image(original_img, bbox, False, 1.0, 0.0, cfg.input_img_shape)
         img = self.transform(img.astype(np.float32))/255
-        #img = img.cuda()[None,:,:,:]
         img = img[None,:,:,:]
         
         # forward
@@ -187,9 +185,6 @@ class HandRecognize:
 
         # 测试模型
             
-        #device = torch.device("cuda:0")
-        #bg = bg.to(device)
-        #self.modelGCN = self.modelGCN.to(device)
         pred = self.modelGCN(bg, bg.ndata['feat'].float())
         pred_type =pred.argmax(1).item()
 
