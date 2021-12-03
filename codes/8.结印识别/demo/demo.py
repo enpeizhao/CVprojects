@@ -340,6 +340,14 @@ class HandRecognize:
 
                     if len(paw_x_list) > 0:
 
+                        # 比例缩放到像素
+                        ratio_x_to_pixel = lambda x: math.ceil(x * resize_w)
+                        ratio_y_to_pixel = lambda y: math.ceil(y * resize_h)
+                        
+                        # 设计手掌左上角、右下角坐标
+                        paw_left_top_x,paw_right_bottom_x = map(ratio_x_to_pixel,[min(paw_x_list),max(paw_x_list)])
+                        paw_left_top_y,paw_right_bottom_y = map(ratio_y_to_pixel,[min(paw_y_list),max(paw_y_list)])
+
                         # 计算模型
                         # prepare bbox
                         x_t_l = paw_left_top_x-100
@@ -353,14 +361,6 @@ class HandRecognize:
 
                         pred_type = self.predictAction(joint_coord)
                         print("action: " + str(pred_type))
-                            
-                        # 比例缩放到像素
-                        ratio_x_to_pixel = lambda x: math.ceil(x * resize_w)
-                        ratio_y_to_pixel = lambda y: math.ceil(y * resize_h)
-                        
-                        # 设计手掌左上角、右下角坐标
-                        paw_left_top_x,paw_right_bottom_x = map(ratio_x_to_pixel,[min(paw_x_list),max(paw_x_list)])
-                        paw_left_top_y,paw_right_bottom_y = map(ratio_y_to_pixel,[min(paw_y_list),max(paw_y_list)])
 
                         # 给手掌画框框
                         cv2.rectangle(self.image,(paw_left_top_x-50,paw_left_top_y-50),(paw_right_bottom_x+50,paw_right_bottom_y+50),(0, 255,0),2)
