@@ -1,5 +1,7 @@
 # 虚拟点读机
 
+<img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img20211211154451.png?x-oss-process=style/wp" style="width:200px;" />
+
 硬件：
 
 Windows11、GPU：nvdia GTX 1060 
