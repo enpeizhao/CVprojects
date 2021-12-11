@@ -4,7 +4,7 @@
 
 硬件：
 
-Windows11、GPU：nvdia GTX 1060 
+Windows11、GPU：nvdia GTX 1060 、普通RBG相机
 
 软件：
 
