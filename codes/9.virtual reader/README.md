@@ -28,7 +28,7 @@ Windows11、GPU：nvdia GTX 1060 、普通RBG相机
 
 [推荐下载](https://github.com/PaddlePaddle/PaddleDetection/blob/develop/static/docs/featured_model/LARGE_SCALE_DET_MODEL.md)`cascade_rcnn_dcn_r101_vd_fpn_gen_server_side`模型，它支持676个类别识别（[详情查看这里](https://github.com/PaddlePaddle/PaddleDetection/blob/develop/static/dataset/voc/generic_det_label_list_zh.txt)），且经过我的测试，速度较好。
 
-4. [下载OCR推理模型](https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.3/doc/doc_ch/models_list.md)，解压后分别放到`baidu_pp_ocr/models/`文件夹下，类似这样：
+5. [下载OCR推理模型](https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.3/doc/doc_ch/models_list.md)，解压后分别放到`baidu_pp_ocr/models/`文件夹下，类似这样：
 
 ![](https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img20211211153818.png?x-oss-process=style/wp)
 
@@ -36,4 +36,4 @@ Windows11、GPU：nvdia GTX 1060 、普通RBG相机
 
 
 
-5. 运行`python demo.py`即可实时离线识别和OCR。
+6. 运行`python demo.py`即可实时离线识别和OCR。
