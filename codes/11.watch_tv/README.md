@@ -24,6 +24,8 @@ dlib
 opencv-contrib-python（可能需要先卸载opencv-python：pip uninstall opencv-python）
 ```
 
+[点击下载权重文件](https://github.com/enpeizhao/CVprojects/releases/tag/Models)`shape_predictor_68_face_landmarks.dat`，放入`./assets`目录。
+
 #### 四、使用方法：
 
 `python demo.py --命令=参数`
