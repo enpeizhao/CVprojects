@@ -16,6 +16,7 @@
 
 | 名称                       | 截图                                                         | 难度 | 代码                                                         |
 | -------------------------- | ------------------------------------------------------------ | ---- | ------------------------------------------------------------ |
+| 13.毛笔书体检测与识别      | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_63991.jpeg?x-oss-process=style/wp" style="width:200px;" /> | ⭐️⭐️   | [codes/13.书法书体检测与识别](https://github.com/enpeizhao/CVprojects/tree/main/codes/13.书法书体检测与识别) |
 | 11.AI分析看电视行为        | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_6178.PNG?x-oss-process=style/wp"  style="width:200px;" /> | ⭐️⭐️⭐️  | [codes/11.watch_tv](https://github.com/enpeizhao/CVprojects/tree/main/codes/11.watch_tv) |
 | 10.AI虚拟鼠标              | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_6083.PNG?x-oss-process=style/wp" style="width:200px;" /> | ⭐️    | [codes/10.virtual_mouse](https://github.com/enpeizhao/CVprojects/tree/main/codes/10.virtual_mouse) |
 | 9.AI 虚拟点读机            | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img20211211154451.png?x-oss-process=style/wp" style="width:200px;" /> | ⭐️⭐️⭐️  | [codes/9.virtual reader](https://github.com/enpeizhao/CVprojects/tree/main/codes/9.virtual%20reader) |
