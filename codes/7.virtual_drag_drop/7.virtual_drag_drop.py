@@ -117,8 +117,8 @@ class HandControlVolume:
         # OpenCV读取视频流
         cap = cv2.VideoCapture(0)
         # 视频分辨率
-        resize_w = 1280
-        resize_h = 720
+        resize_w = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+        resize_h = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
         # 画面显示初始化参数
         rect_percent_text = 0
@@ -262,7 +262,7 @@ class HandControlVolume:
                 # self.image = cv2.resize(self.image, (resize_w//2, resize_h//2))
                 cv2.imshow('virtual drag and drop', self.image)
 
-                if cv2.waitKey(5) & 0xFF == 27 or cv2.getWindowProperty('virtual drag and drop', cv2.WND_PROP_VISIBLE) < 1:
+                if cv2.waitKey(5) & 0xFF == 27:
                     break
             cap.release()
 
