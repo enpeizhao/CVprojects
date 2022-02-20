@@ -21,3 +21,11 @@ Windows11、conda、Python3.8、CUDA（11.1）、Pytorch==1.8.0。
 * demo.py：采集训练数据和识别用；
 * train.ipynb：训练数据用。
 
+
+
+
+
+### 微信技术交流、问题反馈：
+
+<img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5862.JPG?x-oss-process=style/wp" style="width:200px;" />
+
