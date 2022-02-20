@@ -105,6 +105,8 @@ def faceRegiser(faceId=1,userName='default',interval=3,faceCount=3,resize_w=0,re
             # 绘制框框
             l,t,r,b = face.left(),face.top(),face.right(),face.bottom()
             cv2.rectangle(frame,(l,t),(r,b),(0,255,0),2)
+            
+            now = time.time()
 
             if  (now - show_time) < 0.5:
                 frame = cv2AddChineseText(frame, "注册成功 {count}/{faceCount}".format(count=(count+1),faceCount=faceCount) ,  (l, b+30), textColor=(255, 0, 255), textSize=40)
@@ -114,7 +116,7 @@ def faceRegiser(faceId=1,userName='default',interval=3,faceCount=3,resize_w=0,re
             if count < faceCount:
 
                 # 检查时间
-                now = time.time()
+                
                 if now - startTime > interval:
 
                     # 特征描述符
