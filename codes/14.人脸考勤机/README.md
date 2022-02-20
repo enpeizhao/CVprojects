@@ -4,20 +4,20 @@
 
 
 
-#### 一、硬件：
+## 一、硬件：
 
 * Windows10或11（无需GPU）或MacOS 都测试可行
 * 普通RBG USB摄像头
 
-#### 二、软件：
+## 二、软件：
 
 * Python：3.7
 * opencv 
 * Dlib
 
-#### 二、用法：
+## 二、用法：
 
-使用`python demo_full.py --{参数名}={参数值}`
+使用`python demo_full.py --{参数名}={参数值}`
 
 ```
   -h, --help            show this help message and exit
@@ -36,7 +36,7 @@
 
 
 
-##### 2.1、下载模型与字体
+### 2.1、下载模型与字体
 
 **2.1.1 [下载模型文件](https://github.com/enpeizhao/CVprojects/releases/tag/Models)放到`./weights`目录下**：
 
@@ -56,7 +56,7 @@
 
 * [下载地址](https://github.com/enpeizhao/CVprojects/releases/tag/font)
 
-##### 2.2、注册人脸：将人脸特征写入`./data/feature.csv`
+### 2.2、注册人脸：将人脸特征写入`./data/feature.csv`
 
 用法：
 
@@ -68,7 +68,7 @@
 
 
 
-##### 2.3、识别人脸：将考勤记录写入`./data/attendance.csv`
+#### 2.3、识别人脸：将考勤记录写入`./data/attendance.csv`
 
 用法：
 
