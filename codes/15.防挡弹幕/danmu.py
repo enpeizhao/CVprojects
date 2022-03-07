@@ -46,33 +46,6 @@ class Danmu_track:
         self.font_color = font_color
         
 
-    def get_long_space(self,num):
-        """
-        生成num个空格字符
-
-        @param num int 空格数量
-
-        @return str
-        """
-        long_space = ""
-        for i in range(num):
-            long_space+=" "
-        return long_space
-            
-    
-    def generate_long_text(self,text_list):
-        """
-        根据文字列表生成长的字符串
-
-        @param text_list list 弹幕文字列表
-        @return str
-        
-        """
-        long_text = ''
-        for text in text_list:
-            if text != '':
-                long_text  = long_text +  text + self.get_long_space(20)
-        return long_text
     
     def create_blank(self,w,h):
         """
@@ -95,7 +68,7 @@ class Danmu_track:
         @return Image
         """
         # 长文
-        long_text = self.generate_long_text(text_list)
+        long_text =( " "*20).join(text_list)
         # 复制原底图
         trans_blank_copy = self.trans_blank.copy()
         # 绘制
