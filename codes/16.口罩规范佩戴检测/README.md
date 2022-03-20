@@ -8,7 +8,7 @@
 
 #### 本项目使用的LeNet-5模型架构：
 
-![](https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgcnn.png?x-oss-process=style/wp)
+![cnn](./cnn.png	)
 
 
 
