@@ -23,7 +23,7 @@
 
 ## 三、用法：
 
-* 参考YOLOv5官网：https://github.com/ultralytics/yolov5，将YOLOv5 clone到本项目目录（当前YOLOv5目录为空，替换即可）；
+* 参考[YOLOv5官网](https://github.com/ultralytics/yolov5)，将YOLOv5 clone到本项目目录（当前YOLOv5目录为空，替换即可）；
 * 下载训练好的权重文件，如`ppe_yolo_n.pt`放到`weights`目录下：[下载地址](https://github.com/enpeizhao/CVprojects/releases/tag/Models)
 * 运行`python demo.py`即可；
 * jetson nano tensoRT加速运行使用`python yolo_trt_demo.py`，可以跑到20FPS，具体参考https://github.com/wang-xinyu/tensorrtx/tree/master/yolov5
