@@ -1,0 +1,110 @@
+
+[application]
+enable-perf-measurement=1
+perf-measurement-interval-sec=5
+#gie-kitti-output-dir=streamscl
+
+[tiled-display]
+enable=1
+rows=1
+columns=1
+width=1280
+height=720
+
+[source0]
+enable=1
+#Type - 1=CameraV4L2 2=URI 3=MultiURI
+type=1
+camera-width=640
+camera-height=480
+camera-fps-n=30
+camera-fps-d=1
+camera-v4l2-dev-node=0
+
+[sink0]
+enable=1
+#Type - 1=FakeSink 2=EglSink 3=File 4=RTSPStreaming 5=Overlay
+type=5
+sync=0
+display-id=0
+offset-x=0
+offset-y=0
+width=0
+height=0
+overlay-id=1
+source-id=0
+
+[sink1]
+enable=0
+type=3
+#1=mp4 2=mkv
+container=1
+#1=h264 2=h265 3=mpeg4
+codec=1
+#encoder type 0=Hardware 1=Software
+enc-type=0
+sync=0
+bitrate=2000000
+#H264 Profile - 0=Baseline 2=Main 4=High
+#H265 Profile - 0=Main 1=Main10
+profile=0
+output-file=out.mp4
+source-id=0
+
+[sink2]
+enable=0
+#Type - 1=FakeSink 2=EglSink 3=File 4=RTSPStreaming 5=Overlay
+type=4
+#1=h264 2=h265
+codec=1
+#encoder type 0=Hardware 1=Software
+enc-type=0
+sync=0
+bitrate=4000000
+#H264 Profile - 0=Baseline 2=Main 4=High
+#H265 Profile - 0=Main 1=Main10
+profile=0
+# set below properties in case of RTSPStreaming
+rtsp-port=8554
+udp-port=5400
+
+
+[osd]
+enable=1
+border-width=2
+text-size=15
+text-color=1;1;1;1;
+text-bg-color=0.3;0.3;0.3;1
+font=Serif
+show-clock=0
+clock-x-offset=800
+clock-y-offset=820
+clock-text-size=12
+clock-color=1;0;0;0
+
+[streammux]
+##Boolean property to inform muxer that sources are live
+live-source=1
+batch-size=1
+##time out in usec, to wait after the first buffer is available
+##to push the batch even if the complete batch is not formed
+batched-push-timeout=40000
+## Set muxer output width and height
+width=1280
+height=720
+## If set to TRUE, system timestamp will be attached as ntp timestamp
+## If set to FALSE, ntp timestamp from rtspsrc, if available, will be attached
+# attach-sys-ts-as-ntp=1
+
+# config-file property is mandatory for any gie section.
+# Other properties are optional and if set will override the properties set in
+# the infer config file.
+[primary-gie]
+enable=1
+gpu-id=0
+gie-unique-id=1
+nvbuf-memory-type=0
+config-file=config_infer_primary.txt
+
+[tests]
+file-loop=0
