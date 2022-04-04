@@ -68,7 +68,7 @@ Speed: 0.2ms pre-process, 4.7ms inference, 3.9ms NMS per image at shape (12, 3, 
 # python val.py --data ./data/coco_chv.yaml  --weights runs/train/base_s/weights/best.pt --batch-size 12
 # 15.8 GFLOPs
 
-							 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95
+		Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95
                  all        133       1084      0.894      0.848      0.883      0.496
               person        133        450      0.915       0.84      0.887      0.508
                 vest        133        217      0.928      0.834      0.877      0.501
@@ -83,7 +83,7 @@ Speed: 0.2ms pre-process, 8.3ms inference, 3.9ms NMS per image at shape (12, 3, 
 # m
 # python val.py --data ./data/coco_chv.yaml  --weights runs/train/base_m/weights/best.pt --batch-size 12
 # 48.0 GFLOPs
-							 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95
+		Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95
                  all        133       1084      0.928      0.845      0.886      0.512
               person        133        450      0.935      0.794      0.895      0.529
                 vest        133        217      0.922      0.813      0.868      0.508
@@ -97,7 +97,7 @@ Speed: 0.4ms pre-process, 18.8ms inference, 4.6ms NMS per image at shape (12, 3,
 # n6 1280 ：
 # python val.py --data ./data/coco_chv.yaml  --weights runs/train/base_n6_1280/weights/best.pt --batch-size 12 --img-size 1280
 # 4.3 GFLOPs
-							 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95
+		Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95
                  all        133       1084      0.906      0.858      0.901      0.507
               person        133        450      0.903      0.831      0.887      0.503
                 vest        133        217      0.922      0.816       0.86      0.486
