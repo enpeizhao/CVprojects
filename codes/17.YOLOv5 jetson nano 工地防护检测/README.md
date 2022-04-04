@@ -39,7 +39,7 @@
 
 * 预测
 
-![](imgs/val_batch0_pred.jpg)
+![](imgs/val_batch1_pred.jpg)
 
 
 
