@@ -53,7 +53,7 @@
 # n
 # python val.py --data ./data/coco_chv.yaml  --weights runs/train/base_n/weights/best.pt --batch-size 12
 # 4.3 GFLOPs
-							 Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95
+Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95
                  all        133       1084       0.88      0.823      0.868      0.479
               person        133        450      0.899      0.808      0.877      0.484
                 vest        133        217      0.905      0.788      0.833      0.468
