@@ -8,6 +8,8 @@ import cv2
 from deep_sort.utils.parser import get_config
 from deep_sort.deep_sort import DeepSort
 from haversine import haversine, Unit
+from sys import platform as _platform
+
 
 
 class Detector:
@@ -27,7 +29,16 @@ class Detector:
         self.device = select_device(self.device)
         model = attempt_load(self.weights, map_location=self.device)
         model.to(self.device).eval()
-        model.half()
+
+        # 判断系统，支持MACOS 和 windows
+        if _platform == "darwin":
+            # MAC OS X
+            model.float()
+        else:
+            # Windows
+            model.half()
+        
+        # 
         self.m = model
         self.names = model.module.names if hasattr(
             model, 'module') else model.names
@@ -41,7 +52,14 @@ class Detector:
         img = img[:, :, ::-1].transpose(2, 0, 1)
         img = np.ascontiguousarray(img)
         img = torch.from_numpy(img).to(self.device)
-        img = img.half()  # 半精度
+
+        if _platform == "darwin":
+            # MAC OS X
+            img = img.float() 
+        else:
+            # Windows
+            img = img.half()
+
         img /= 255.0  # 图像归一化
         if img.ndimension() == 3:
             img = img.unsqueeze(0)
