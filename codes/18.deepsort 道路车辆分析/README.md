@@ -1,6 +1,6 @@
 # YOLOv5 + Deepsort 车辆追踪及速度分析
 
-![](https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img20220418161251.png?x-oss-process=style/wp)
+![](./demo.jpg)
 
 
 
