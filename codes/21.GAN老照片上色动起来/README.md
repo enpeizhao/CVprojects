@@ -10,6 +10,8 @@
 
   * GAN简单的原理代码请见：[DCGAN生成手写数字](./DCGAN/mnist_DCGAN_train.ipynb)
 
+![](./DCGAN/model_arc.png)
+
 * 项目基于下面三个开源项目改写、封装，封装后的自定义模块：`demo.py`：
 
   * https://github.com/jantic/DeOldify
