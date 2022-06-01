@@ -1,0 +1,14 @@
+opencv-python==4.5.1.48
+pandas==0.23.4
+python-dateutil==2.7.3
+pytz==2018.5
+PyYAML==5.1
+scikit-image==0.14.2
+scikit-learn==0.19.2
+scipy==1.1.0
+tqdm==4.24.0
+imageio==2.19.3
+imageio-ffmpeg==0.4.7
+matplotlib==3.5.2
+jupyterlab==3.4.2
+numpy==1.21.5
