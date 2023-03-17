@@ -18,7 +18,7 @@
 
 | 项目名称       | 截图                                                         | 方法            | 难度 | 代码地址                                                     |
 | -------------- | ------------------------------------------------------------ | --------------- | ---- | ------------------------------------------------------------ |
-| 人员闯入和聚众 | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img202303171105294.png?x-oss-process=style/wp" style="width:200px;" > | YOLOV5 TensorRT | ⭐️⭐️⭐️  | https://github.com/enpeizhao/CVprojects/tree/main/cpp_projs/1.people_cross_gather |
+| 人员闯入和聚众 | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img202303171105294.png?x-oss-process=style/wp" style="width:200px;" > | YOLOV5 TensorRT | ⭐️⭐️⭐️  | [cpp_projs/1.people_cross_gather](https://github.com/enpeizhao/CVprojects/tree/main/cpp_projs/1.people_cross_gather) |
 
 
 
