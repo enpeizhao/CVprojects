@@ -27,15 +27,15 @@ target_link_libraries(yolo_utils PUBLIC ${OpenCV_LIBS})
 set_target_properties(yolo_utils PROPERTIES CUDA_ARCHITECTURES "61;70;75")
 
 
-# add_executable(build
-#     build.cu
-#     ${TensorRT_SAMPLE_DIR}/common/logger.cpp
-#     ${TensorRT_SAMPLE_DIR}/common/sampleUtils.cpp
-# )
-# target_include_directories(build PRIVATE ${TensorRT_INCLUDE_DIRS} ${TensorRT_SAMPLE_DIR}/common)
-# target_link_libraries(build PRIVATE -Wl,--no-as-needed yolo_plugin) # -Wl,--no-as-needed is needed to avoid linking errors
-# target_link_libraries(build PRIVATE yolo_utils)
-# set_target_properties(build PROPERTIES CUDA_ARCHITECTURES "61;70;75")
+add_executable(build
+    build.cu
+    ${TensorRT_SAMPLE_DIR}/common/logger.cpp
+    ${TensorRT_SAMPLE_DIR}/common/sampleUtils.cpp
+)
+target_include_directories(build PRIVATE ${TensorRT_INCLUDE_DIRS} ${TensorRT_SAMPLE_DIR}/common)
+target_link_libraries(build PRIVATE -Wl,--no-as-needed yolo_plugin) # -Wl,--no-as-needed is needed to avoid linking errors
+target_link_libraries(build PRIVATE yolo_utils)
+set_target_properties(build PROPERTIES CUDA_ARCHITECTURES "61;70;75")
 
 # add subdirectory to build streamer
 add_subdirectory(streamer)
