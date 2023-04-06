@@ -16,9 +16,10 @@
 
 ### 三、C++ 项目列表
 
-| 项目名称                           | 截图                                                         | 代码地址                                                     |
-| ---------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| C++ YOLOV5 TensorRT 人员闯入和聚众 | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img202303171105294.png?x-oss-process=style/wp" style="width:200px;" > | [cpp_projs/1.people_cross_gather](https://github.com/enpeizhao/CVprojects/tree/main/cpp_projs/1.people_cross_gather) |
+| 项目名称                            | 截图                                                         | 代码地址                                                     |
+| ----------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| C++ Deepstream TensorRT多流检测追踪 | ![](https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img202304061135614.png?x-oss-process=style/wp) | [cpp_projs/1.people_cross_gather](https://github.com/enpeizhao/CVprojects/tree/main/cpp_projs/1.people_cross_gather) |
+| C++ YOLOV5 TensorRT 人员闯入和聚众  | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img202303171105294.png?x-oss-process=style/wp" > | [cpp_projs/1.people_cross_gather](https://github.com/enpeizhao/CVprojects/tree/main/cpp_projs/1.people_cross_gather) |
 
 
 

@@ -1,0 +1,52 @@
+%YAML:1.0
+################################################################################
+# Copyright (c) 2021, NVIDIA CORPORATION. All rights reserved.
+#
+# Permission is hereby granted, free of charge, to any person obtaining a
+# copy of this software and associated documentation files (the "Software"),
+# to deal in the Software without restriction, including without limitation
+# the rights to use, copy, modify, merge, publish, distribute, sublicense,
+# and/or sell copies of the Software, and to permit persons to whom the
+# Software is furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+# THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+# DEALINGS IN THE SOFTWARE.
+################################################################################
+
+BaseConfig:
+  minDetectorConfidence: 0   # If the confidence of a detector bbox is lower than this, then it won't be considered for tracking
+
+TargetManagement:
+  preserveStreamUpdateOrder: 0 # When assigning new target ids, preserve input streams' order to keep target ids in a deterministic order over multuple runs
+  maxTargetsPerStream: 150  # Max number of targets to track per stream. Recommended to set >10. Note: this value should account for the targets being tracked in shadow mode as well. Max value depends on the memory capacity
+
+  # [Creation & Termination Policy]
+  minIouDiff4NewTarget: 0.5   # If the IOU between the newly detected object and any of the existing targets is higher than this threshold, this newly detected object will be discarded.
+  probationAge: 4   # If the target's age exceeds this, the target will be considered to be valid.
+  maxShadowTrackingAge: 38 # Max length of shadow tracking. If the shadowTrackingAge exceeds this limit, the tracker will be terminated.
+  earlyTerminationAge: 1 # If the shadowTrackingAge reaches this threshold while in TENTATIVE period, the target will be terminated prematurely.
+
+TrajectoryManagement:
+  useUniqueID: 0   # Use 64-bit long Unique ID when assignining tracker ID.
+
+DataAssociator:
+  dataAssociatorType: 0 # the type of data associator among { DEFAULT= 0 }
+  associationMatcherType: 0 # the type of matching algorithm among { GREEDY=0, GLOBAL=1 }
+  checkClassMatch: 1  # If checked, only the same-class objects are associated with each other. Default: true
+
+  # [Association Metric: Thresholds for valid candidates]
+  minMatchingScore4Overall: 0.0   # Min total score
+  minMatchingScore4SizeSimilarity: 0.0    # Min bbox size similarity score
+  minMatchingScore4Iou: 0.0       # Min IOU score
+
+  # [Association Metric: Weights]
+  matchingScoreWeight4SizeSimilarity: 0.4    # Weight for the Size-similarity score
+  matchingScoreWeight4Iou: 0.6               # Weight for the IOU score

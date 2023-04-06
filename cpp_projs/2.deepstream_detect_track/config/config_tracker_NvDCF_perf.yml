@@ -1,0 +1,80 @@
+%YAML:1.0
+################################################################################
+# Copyright (c) 2021, NVIDIA CORPORATION. All rights reserved.
+#
+# Permission is hereby granted, free of charge, to any person obtaining a
+# copy of this software and associated documentation files (the "Software"),
+# to deal in the Software without restriction, including without limitation
+# the rights to use, copy, modify, merge, publish, distribute, sublicense,
+# and/or sell copies of the Software, and to permit persons to whom the
+# Software is furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+# THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+# DEALINGS IN THE SOFTWARE.
+################################################################################
+
+BaseConfig:
+  minDetectorConfidence: 0   # If the confidence of a detector bbox is lower than this, then it won't be considered for tracking
+
+TargetManagement:
+  enableBboxUnClipping: 1   # In case the bbox is likely to be clipped by image border, unclip bbox
+  preserveStreamUpdateOrder: 0 # When assigning new target ids, preserve input streams' order to keep target ids in a deterministic order over multuple runs
+  maxTargetsPerStream: 150  # Max number of targets to track per stream. Recommended to set >10. Note: this value should account for the targets being tracked in shadow mode as well. Max value depends on the GPU memory capacity
+
+  # [Creation & Termination Policy]
+  minIouDiff4NewTarget: 0.5   # If the IOU between the newly detected object and any of the existing targets is higher than this threshold, this newly detected object will be discarded.
+  minTrackerConfidence: 0.2   # If the confidence of an object tracker is lower than this on the fly, then it will be tracked in shadow mode. Valid Range: [0.0, 1.0]
+  probationAge: 3 # If the target's age exceeds this, the target will be considered to be valid.
+  maxShadowTrackingAge: 30  # Max length of shadow tracking. If the shadowTrackingAge exceeds this limit, the tracker will be terminated.
+  earlyTerminationAge: 1   # If the shadowTrackingAge reaches this threshold while in TENTATIVE period, the target will be terminated prematurely.
+
+TrajectoryManagement:
+  useUniqueID: 0   # Use 64-bit long Unique ID when assignining tracker ID.
+
+DataAssociator:
+  dataAssociatorType: 0 # the type of data associator among { DEFAULT= 0 }
+  associationMatcherType: 0 # the type of matching algorithm among { GREEDY=0, GLOBAL=1 }
+  checkClassMatch: 1  # If checked, only the same-class objects are associated with each other. Default: true
+
+  # [Association Metric: Thresholds for valid candidates]
+  minMatchingScore4Overall: 0.0   # Min total score
+  minMatchingScore4SizeSimilarity: 0.6  # Min bbox size similarity score
+  minMatchingScore4Iou: 0.0       # Min IOU score
+  minMatchingScore4VisualSimilarity: 0.7  # Min visual similarity score
+
+  # [Association Metric: Weights]
+  matchingScoreWeight4VisualSimilarity: 0.6  # Weight for the visual similarity (in terms of correlation response ratio)
+  matchingScoreWeight4SizeSimilarity: 0.0    # Weight for the Size-similarity score
+  matchingScoreWeight4Iou: 0.4   # Weight for the IOU score
+
+StateEstimator:
+  stateEstimatorType: 1  # the type of state estimator among { DUMMY=0, SIMPLE=1, REGULAR=2 }
+
+  # [Dynamics Modeling]
+  processNoiseVar4Loc: 2.0    # Process noise variance for bbox center
+  processNoiseVar4Size: 1.0   # Process noise variance for bbox size
+  processNoiseVar4Vel: 0.1    # Process noise variance for velocity
+  measurementNoiseVar4Detector: 4.0    # Measurement noise variance for detector's detection
+  measurementNoiseVar4Tracker: 16.0    # Measurement noise variance for tracker's localization
+
+VisualTracker:
+  visualTrackerType: 1 # the type of visual tracker among { DUMMY=0, NvDCF=1 }
+
+  # [NvDCF: Feature Extraction]
+  useColorNames: 1     # Use ColorNames feature
+  useHog: 0            # Use Histogram-of-Oriented-Gradient (HOG) feature
+  featureImgSizeLevel: 2  # Size of a feature image. Valid range: {1, 2, 3, 4, 5}, from the smallest to the largest
+  featureFocusOffsetFactor_y: -0.2 # The offset for the center of hanning window relative to the feature height. The center of hanning window would move by (featureFocusOffsetFactor_y*featureMatSize.height) in vertical direction
+
+  # [NvDCF: Correlation Filter]
+  filterLr: 0.075 # learning rate for DCF filter in exponential moving average. Valid Range: [0.0, 1.0]
+  filterChannelWeightsLr: 0.1 # learning rate for the channel weights among feature channels. Valid Range: [0.0, 1.0]
+  gaussianSigma: 0.75 # Standard deviation for Gaussian for desired response when creating DCF filter [pixels]
