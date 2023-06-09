@@ -225,7 +225,7 @@ if __name__ == "__main__":
     process1 = Process(target=realsense_video, args=(center_p_queue, dobot_status))
     process2 = Process(target=dobot_grasp, args=(center_p_queue, dobot_status))
     process1.start()
-    # process2.start()
+    process2.start()
     process1.join()
-    # process2.join()
+    process2.join()
 
