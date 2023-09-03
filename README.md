@@ -23,6 +23,7 @@
 
 | 名称与在线播放地址                                           | 截图                                                         | 代码地址                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| SAM测量不规则图形面积                                        | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img202309031100380.png?x-oss-process=style/wp" style="width:200px;" /> | [查看代码](https://enpeicv.com/forum.php?mod=viewthread&tid=90&extra=page%3D1) |
 | 寻找早晨去上班的最佳出发时间                                 | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img202308121213266.png?x-oss-process=style/wp" style="width:200px;" /> | [codes/34.yolov8_track](https://enpeicv.com/forum.php?mod=viewthread&tid=84&extra=page%3D1) |
 | 33.旋转目标检测车位检测                                      | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img202306171012021.png?x-oss-process=style/wp" style="width:200px;" /> | [codes/33.旋转目标检测车位检测](https://github.com/enpeizhao/CVprojects/tree/main/codes/33.rotate_obj_det_park) |
 | 32.realsense dobot 机械臂视觉抓取                            | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img202306090924832.png?x-oss-process=style/wp" style="width:200px;" /> | [codes/32.realsense dobot 机械臂视觉抓取](https://github.com/enpeizhao/CVprojects/tree/main/codes/32.realsense_dobot) |
