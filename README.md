@@ -23,7 +23,7 @@
 
 | 名称与在线播放地址                                           | 截图                                                         | 代码地址                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ReID行人重识别跨境头搜人                                     | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202310291901939.png?x-oss-process=style/wp" style="width:200px;" /> | [查看代码](https://enpeicv.com/forum.php?mod=viewthread&tid=108&extra=page%3D1) |
+| ReID行人重识别跨境头搜人                                     | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202310291901939.png?x-oss-process=style/resize" style="width:200px;" /> | [查看代码](https://enpeicv.com/forum.php?mod=viewthread&tid=108&extra=page%3D1) |
 | SAM测量不规则图形面积                                        | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img202309031100380.png?x-oss-process=style/wp" style="width:200px;" /> | [查看代码](https://enpeicv.com/forum.php?mod=viewthread&tid=90&extra=page%3D1) |
 | 寻找早晨去上班的最佳出发时间                                 | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img202308121213266.png?x-oss-process=style/wp" style="width:200px;" /> | [codes/34.yolov8_track](https://enpeicv.com/forum.php?mod=viewthread&tid=84&extra=page%3D1) |
 | 33.旋转目标检测车位检测                                      | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img202306171012021.png?x-oss-process=style/wp" style="width:200px;" /> | [codes/33.旋转目标检测车位检测](https://github.com/enpeizhao/CVprojects/tree/main/codes/33.rotate_obj_det_park) |
