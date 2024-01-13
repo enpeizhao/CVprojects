@@ -56,7 +56,7 @@ https://github.com/enpeizhao/CVprojects/assets/6524256/f2f0f5c7-c75d-4db4-9593-a
 ### 3.References
 
 * [High Speed Rotation Estimation with Dynamic Vision Sensors](https://arxiv.org/pdf/2209.02205.pdf)
-* [https://kar.kent.ac.uk/77844/1/1570319863_I2MTC2017_speed%20measurement_final.pdf](https://kar.kent.ac.uk/77844/1/1570319863_I2MTC2017_speed measurement_final.pdf) 
+* [https://kar.kent.ac.uk/77844/1/1570319863_I2MTC2017_speed%20measurement](https://kar.kent.ac.uk/77844/1/1570319863_I2MTC2017_speed measurement_final.pdf) 
 * https://ieeexplore.ieee.org/document/8443343
 * https://www.mdpi.com/1424-8220/20/24/7314
 * https://www.semanticscholar.org/reader/d5cc5ae8e75ef87ac8824ae13c7a4d3d11e92be8
