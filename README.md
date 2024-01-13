@@ -1,28 +1,24 @@
-# 计算机视觉小项目
+# Computer vision projects
 
-> 请仅做个人学习、研究使用
+### 1.Demo
 
-### 一、运行demo
+* [网页版抖音](https://www.douyin.com/user/MS4wLjABAAAAPIrmWhFY-OHt5X8GZcHGqwDo3J29gYHcgG-QebKIDd4Wu_f4dwM2hNoEYyQBcim2?enter_from=search_result&enter_method=search_result&extra_params=%7B%22search_params%22%3A%7B%22search_type%22%3A%22user%22%2C%22search_id%22%3A%22202111241756340101512071374A007D0F%22%2C%22search_keyword%22%3A%22enpe%22%2C%22search_result_id%22%3A%221205502393189652%22%7D%7D)
+* [网页版B站](https://space.bilibili.com/1355276754)
 
-| 抖音                                                         | B站                                                |
-| ------------------------------------------------------------ | -------------------------------------------------- |
-| [网页版抖音](https://www.douyin.com/user/MS4wLjABAAAAPIrmWhFY-OHt5X8GZcHGqwDo3J29gYHcgG-QebKIDd4Wu_f4dwM2hNoEYyQBcim2?enter_from=search_result&enter_method=search_result&extra_params=%7B%22search_params%22%3A%7B%22search_type%22%3A%22user%22%2C%22search_id%22%3A%22202111241756340101512071374A007D0F%22%2C%22search_keyword%22%3A%22enpe%22%2C%22search_result_id%22%3A%221205502393189652%22%7D%7D) | [网页版B站](https://space.bilibili.com/1355276754) |
+### 2. Projects list
 
-
-
-### 二、C++ 项目列表
-
-| 项目名称                            | 截图                                                         | 代码地址                                                     |
-| ----------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| C++ Deepstream TensorRT多流检测追踪 | ![](https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img202304061135614.png?x-oss-process=style/wp) | [cpp_projs/2.deepstream_detect_track](https://github.com/enpeizhao/CVprojects/tree/main/cpp_projs/2.deepstream_detect_track) |
-| C++ YOLOV5 TensorRT 人员闯入和聚众  | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img202303171105294.png?x-oss-process=style/wp" > | [cpp_projs/1.people_cross_gather](https://github.com/enpeizhao/CVprojects/tree/main/cpp_projs/1.people_cross_gather) |
+| Title             | Snapshot | Language   | Code Link |
+| ----------------- | -------- | ---------- | --------- |
+| Vision Tachometer |          | Python/C++ |           |
 
 
 
-### 三、Python 项目列表
+### 3. Archived
 
 | 名称与在线播放地址                                           | 截图                                                         | 代码地址                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| C++ Deepstream TensorRT多流检测追踪                          | ![](https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img202304061135614.png?x-oss-process=style/wp) | [cpp_projs/2.deepstream_detect_track](https://github.com/enpeizhao/CVprojects/tree/main/cpp_projs/2.deepstream_detect_track) |
+| C++ YOLOV5 TensorRT 人员闯入和聚众                           | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img202303171105294.png?x-oss-process=style/wp" > | [cpp_projs/1.people_cross_gather](https://github.com/enpeizhao/CVprojects/tree/main/cpp_projs/1.people_cross_gather) |
 | Yolov8物体关键点（文具、螺栓）                               | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202311291510322.png?x-oss-process=style/wp" style="width:200px;" /> | [ 4.Yolov8物体关键点（文具、螺栓）](https://enpeicv.com/forum.php?mod=viewthread&tid=116&extra=page%3D1) |
 | ReID行人重识别跨境头搜人                                     | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202310291901939.png?x-oss-process=style/resize" style="width:200px;" /> | [查看代码](https://enpeicv.com/forum.php?mod=viewthread&tid=108&extra=page%3D1) |
 | SAM测量不规则图形面积                                        | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img202309031100380.png?x-oss-process=style/wp" style="width:200px;" /> | [查看代码](https://enpeicv.com/forum.php?mod=viewthread&tid=90&extra=page%3D1) |
