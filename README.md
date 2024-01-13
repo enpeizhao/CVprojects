@@ -7,9 +7,9 @@
 
 ### 2. Projects list
 
-| Title             | Snapshot                                                     | Language   | Code Link                                                    |
-| ----------------- | ------------------------------------------------------------ | ---------- | ------------------------------------------------------------ |
-| Vision Tachometer | ![](https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202401131157240.png?x-oss-process=style/wp) | Python/C++ | [2024_projects/1.vision_tachometer](https://github.com/enpeizhao/CVprojects/tree/main/2024_projects/1.vision_tachometer) |
+| Title                                                        | Snapshot                                                     | Language   | Code Link                                                    |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------- | ------------------------------------------------------------ |
+| Vision Tachometer  (Interstellar  Endurance rotation' speed estimation) | ![](https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202401131157240.png?x-oss-process=style/wp) | Python/C++ | [2024_projects/1.vision_tachometer](https://github.com/enpeizhao/CVprojects/tree/main/2024_projects/1.vision_tachometer) |
 
 
 
