@@ -7,9 +7,9 @@
 
 ### 2. Projects list
 
-| Title             | Snapshot | Language   | Code Link |
-| ----------------- | -------- | ---------- | --------- |
-| Vision Tachometer |          | Python/C++ |           |
+| Title             | Snapshot                                                     | Language   | Code Link |
+| ----------------- | ------------------------------------------------------------ | ---------- | --------- |
+| Vision Tachometer | https://github.com/enpeizhao/CVprojects/assets/6524256/f2f0f5c7-c75d-4db4-9593-a182d5604dcb | Python/C++ |           |
 
 
 
