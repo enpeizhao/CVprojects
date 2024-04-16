@@ -15,7 +15,7 @@
 
 | Title                                                        | Snapshot                                                     | Type                | Language   | Code Link                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------- | ---------- | ------------------------------------------------------------ |
-| K210 vision pomodoro                                         | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202404161538464.png?x-oss-process=style/wp" style="zoom:50%;" /> | Hardware & software | Python     |                                                              |
+| K210 vision pomodoro                                         | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202404161538464.png?x-oss-process=style/wp" style="zoom:50%;" /> | Hardware & software | Python     | [2024_projects/2.k210_vision](https://github.com/enpeizhao/CVprojects/tree/main/2024_projects/2.k210_vision) |
 | Vision Tachometer  (Interstellar  Endurance rotation' speed estimation) | ![](https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202401131157240.png?x-oss-process=style/wp) | software            | Python/C++ | [2024_projects/1.vision_tachometer](https://github.com/enpeizhao/CVprojects/tree/main/2024_projects/1.vision_tachometer) |
 
 
