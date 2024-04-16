@@ -1,6 +1,10 @@
 ## Vision Tachometer
 
 > If you have any questions, please submit issues or email me: enpeicv@outlook.com, have fun with it!
+>
+> 扫码加入微信WeChat交流群：
+>
+> <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202404161532376.png?x-oss-process=style/wp" style="zoom:15%;" />
 
 ### 1.Demo
 

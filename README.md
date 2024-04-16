@@ -1,5 +1,11 @@
 # Computer vision projects
 
+> If you have any questions, please submit issues or email me: enpeicv@outlook.com, have fun with it!
+>
+> 扫码加入微信WeChat交流群：
+>
+> <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202404161532376.png?x-oss-process=style/wp" style="zoom:15%;" />
+
 ### 1.Demo
 
 * [网页版抖音](https://www.douyin.com/user/MS4wLjABAAAAPIrmWhFY-OHt5X8GZcHGqwDo3J29gYHcgG-QebKIDd4Wu_f4dwM2hNoEYyQBcim2?enter_from=search_result&enter_method=search_result&extra_params=%7B%22search_params%22%3A%7B%22search_type%22%3A%22user%22%2C%22search_id%22%3A%22202111241756340101512071374A007D0F%22%2C%22search_keyword%22%3A%22enpe%22%2C%22search_result_id%22%3A%221205502393189652%22%7D%7D)
