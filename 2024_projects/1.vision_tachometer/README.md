@@ -4,7 +4,7 @@
 >
 > 扫码加入微信WeChat交流群：
 >
-> <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202404161532376.png?x-oss-process=style/wp" style="zoom:15%;" />
+> <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202404161532376.png?x-oss-process=style/wp" style="width:200px;" />
 
 ### 1.Demo
 

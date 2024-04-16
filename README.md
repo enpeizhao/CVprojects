@@ -4,7 +4,7 @@
 >
 > 扫码加入微信WeChat交流群：
 >
-> <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202404161532376.png?x-oss-process=style/wp" style="zoom:15%;" />
+> <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202404161532376.png?x-oss-process=style/wp" style="width:200px;" />
 
 ### 1.Demo
 
@@ -13,9 +13,10 @@
 
 ### 2. Projects list
 
-| Title                                                        | Snapshot                                                     | Language   | Code Link                                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------- | ------------------------------------------------------------ |
-| Vision Tachometer  (Interstellar  Endurance rotation' speed estimation) | ![](https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202401131157240.png?x-oss-process=style/wp) | Python/C++ | [2024_projects/1.vision_tachometer](https://github.com/enpeizhao/CVprojects/tree/main/2024_projects/1.vision_tachometer) |
+| Title                                                        | Snapshot                                                     | Type                | Language   | Code Link                                                    |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------- | ---------- | ------------------------------------------------------------ |
+| K210 vision pomodoro                                         | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202404161538464.png?x-oss-process=style/wp" style="zoom:50%;" /> | Hardware & software | Python     |                                                              |
+| Vision Tachometer  (Interstellar  Endurance rotation' speed estimation) | ![](https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202401131157240.png?x-oss-process=style/wp) | software            | Python/C++ | [2024_projects/1.vision_tachometer](https://github.com/enpeizhao/CVprojects/tree/main/2024_projects/1.vision_tachometer) |
 
 
 
