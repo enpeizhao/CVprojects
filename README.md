@@ -15,6 +15,7 @@
 
 | Title                                                        | Snapshot                                                     | Type                | Language   | Code Link                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------- | ---------- | ------------------------------------------------------------ |
+| 《大模型视觉抓取6轴机械臂》                                  | ![](https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202501181831300.png?x-oss-process=style/wp) | Hardware & software | Python     | 整理中。2月20日上传                                          |
 | K210 vision pomodoro                                         | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202404161538464.png?x-oss-process=style/wp" style="zoom:50%;" /> | Hardware & software | Python     | [2024_projects/2.k210_vision](https://github.com/enpeizhao/CVprojects/tree/main/2024_projects/2.k210_vision) |
 | Vision Tachometer  (Interstellar  Endurance rotation' speed estimation) | ![](https://enpei-md.oss-cn-hangzhou.aliyuncs.com/202401131157240.png?x-oss-process=style/wp) | software            | Python/C++ | [2024_projects/1.vision_tachometer](https://github.com/enpeizhao/CVprojects/tree/main/2024_projects/1.vision_tachometer) |
 
