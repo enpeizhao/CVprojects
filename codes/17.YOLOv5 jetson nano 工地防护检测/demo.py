@@ -102,23 +102,25 @@ class PPE_detect:
             
             person_info_item[0]= person_box
             # 依次与帽子计算IOU
+            max_hat_iou = 0
             for hat in hat_list:
                 hat_box = hat[:6]
                 hat_iou = self.get_iou(person_box, hat_box)
                 
-                if hat_iou > hat_iou_thresh:
+                if hat_iou > hat_iou_thresh and hat_iou > max_hat_iou:
                     person_info_item[1] = hat_box
-                    break
+                    max_hat_iou = hat_iou
                     
             # 依次与防护服计算IOU
+            max_vest_iou = 0
             for vest in vest_list:
                 vest_box = vest[:5]
                 vest_iou = self.get_iou(person_box, vest_box)
 
                 
-                if vest_iou > vest_iou_thresh:
+                if vest_iou > vest_iou_thresh and vest_iou > max_vest_iou:
                     person_info_item[2] = vest_box
-                    break
+                    max_vest_iou = vest_iou
 
             person_info_list.append(person_info_item)
         
