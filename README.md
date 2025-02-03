@@ -59,3 +59,14 @@
 | [7.虚拟拖放 Python + opencv](https://www.douyin.com/video/7033012599729999137?modeFrom=userPost&secUid=MS4wLjABAAAAPIrmWhFY-OHt5X8GZcHGqwDo3J29gYHcgG-QebKIDd4Wu_f4dwM2hNoEYyQBcim2) | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img20211120135236.png?x-oss-process=style/wp" style="width:200px;" /> | [codes/7.virtual_drag_drop.py](https://github.com/enpeizhao/CVprojects/blob/main/codes/7.virtual_drag_drop) |
 | [6.Python手势控制电脑音量](https://www.douyin.com/video/7031539631594163469?modeFrom=userPost&secUid=MS4wLjABAAAAPIrmWhFY-OHt5X8GZcHGqwDo3J29gYHcgG-QebKIDd4Wu_f4dwM2hNoEYyQBcim2) | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/img20211120135209.png?x-oss-process=style/wp" style="width:200px;" /> | [codes/6.hand_control_volume.py](https://github.com/enpeizhao/CVprojects/blob/main/codes/6.hand_control_volume) |
 | [5.手势暂停、播放电视](https://www.douyin.com/video/7016958202713771278?modeFrom=userPost&secUid=MS4wLjABAAAAPIrmWhFY-OHt5X8GZcHGqwDo3J29gYHcgG-QebKIDd4Wu_f4dwM2hNoEYyQBcim2) | <img src="https://enpei-md.oss-cn-hangzhou.aliyuncs.com/imgIMG_5885.jpg?x-oss-process=style/wp" style="width:200px" /> | [codes/5.hand_pause_atv/handRemote.py](https://github.com/enpeizhao/CVprojects/blob/main/codes/5.hand_pause_atv/ ) |
+## AI-generated ProductMaps
+
+
+
+| Github file | ProductMap |
+|-------------|------------|
+| [handRemote.py](https://github.com/enpeizhao/CVprojects/blob/main/codes/5.hand_pause_atv/handRemote.py) | [Link to Map](https://product-map.ai/app/public?url=https://github.com/enpeizhao/CVprojects/blob/main/codes/5.hand_pause_atv/handRemote.py) |
+
+Contact ProductMap if you have any questions at [juan@product-map.ai](juan@product-map.ai).
+
+Last updated on Mon Feb 03 22:56:17 UTC 2025.
